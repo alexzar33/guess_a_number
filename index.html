@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess a Number! You vs PC!</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main-content" id="main-content">
+        <h1 class="main-content__title">Guess a Number (0 - 100)</h1>
+        <form action="" method="post" class="form" id="form">
+            <label for="input" class="form__label">Enter a guess</label>
+            <input type="number" name="" id="input" class="form__input" min="0" max="100">
+            <button type="button" id="btn-input" class="form_submit-button">Submit</button>
+        </form>
+        <div class="main-content__infobox">
+            <div class="main-content__user-section">
+                <p id="user-section"><span class="main-content__user-section-title"
+                        id="main-content__user-section-title">Your
+                        guesses:&nbsp</span><span class="main-content__guesses" id="main-content__user-guesses"></span>
+                </p>
+            </div>
+
+            <div class="main-content__pc-section">
+                <p id="pc-section"><span class="main-content__pc-section-title"
+                        id="main-content__pc-section-title">Computer
+                        guesses:&nbsp</span><span class="main-content__pc-guesses" id="main-content__pc-guesses"></span>
+                </p>
+            </div>
+
+            <div class="main-content__counter">
+                <p id="guesses-counter"></p>
+            </div>
+
+            <div class="main-content__outcome">
+                <p class="main-content__message" id="main-content__message"></p>
+                <button class="main-content__refresh-button" id="refresh">Start a new game</button>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="alert" id="alert"></div>
+</body>
+
+</html>

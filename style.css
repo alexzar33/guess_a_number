@@ -1,0 +1,124 @@
+:root {
+  --pc-color: cornflowerblue;
+  --user-color: green;
+  --refreshBtn-color: cornflowerblue;
+}
+.form__input {
+  display: inline-flex;
+}
+
+.main-content__refresh-button {
+  display: flex;
+  width: 100%;
+  background-color: var(--refreshBtn-color);
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.win {
+  background-color: var(--user-color);
+  color: greenyellow;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.win-ai {
+  background-color: var(--pc-color);
+  color: white;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.low {
+  background-color: yellow;
+  color: black;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.high {
+  background-color: red;
+  color: black;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: antiquewhite;
+  padding: 2rem;
+}
+
+.main-content__outcome {
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.main-content__guesses_wrong {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.main-content__guesses {
+  text-decoration: none;
+  text-decoration-thickness: 0;
+}
+
+.main-content__guesses_user-wrong {
+  text-decoration-color: red;
+}
+
+.main-content__guesses_user-right {
+  color: white;
+  border: solid 2px;
+  border-color: var(--user-color);
+  background-color: var(--user-color);
+}
+
+.main-content__guesses_pc-wrong {
+  text-decoration-color: darkslategray;
+}
+
+.main-content__guesses_pc-right {
+  background-color: var(--pc-color);
+  color: white;
+  border: solid 2px;
+  border-color: var(--pc-color);
+}
+
+.main-content__guesses_border {
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+}
+
+.alert {
+  background-color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  border: solid 1rem red;
+  position: absolute;
+  top: 10%;
+  margin: 0;
+  display: none;
+}
